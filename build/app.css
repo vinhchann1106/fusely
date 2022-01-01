@@ -184,7 +184,7 @@ li {
   opacity: 0;
   visibility: hidden;
   transition: all 0.2s ease;
-  padding-top: 40px;
+  display: none;
 }
 .nav-mobile-header {
   display: flex;
@@ -209,6 +209,7 @@ li {
 }
 @media screen and (max-width: 768px) {
   .nav-mobile {
+    padding-top: 40px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
