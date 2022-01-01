@@ -1,0 +1,42 @@
+.banner {
+  padding: 84px;
+  width: 900px;
+  background-color: $neutral-500;
+  margin: 0 auto;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  transform: translateY(50%);
+  z-index: 10;
+  &-heading {
+    width: 346px;
+    font-size: 50px;
+    line-height: 56px;
+    margin-bottom: 30px;
+  }
+  & .btn-contact {
+    padding: 16px 56.5px;
+  }
+  @media screen and (max-width: 768px) {
+    transform: translateY(0%);
+    padding: 84px 63px;
+    width: 100%;
+    &-heading {
+      text-align: center;
+    }
+  }
+
+  @media screen and (max-width: 375px) {
+    justify-content: center;
+    padding: 72px 20px;
+    &-heading {
+      font-size: 34px;
+    }
+  }
+
+  @media screen and (min-width: 410px) and (max-width: 767px) {
+    justify-content: center;
+  }
+}

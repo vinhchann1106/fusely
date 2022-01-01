@@ -1,0 +1,33 @@
+.header {
+  &-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 80px;
+    margin-top: 40px;
+  }
+  &-button-nav {
+    display: none;
+    cursor: pointer;
+  }
+  @media screen and(max-width: 768px) {
+    &-button-nav {
+      display: inline-flex;
+    }
+  }
+}
+
+.nav-auth {
+  .btn + .btn {
+    margin-left: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-container {
+    margin-bottom: 55.5px;
+  }
+  .nav-auth {
+    display: none;
+  }
+}

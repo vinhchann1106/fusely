@@ -1,0 +1,78 @@
+.pricing {
+  &-container {
+    margin-bottom: 220px;
+  }
+  &-heading {
+    font-size: 60px;
+    line-height: 64px;
+    color: $neutral-500;
+    text-align: center;
+    margin-bottom: 90px;
+  }
+  &-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 45px 0;
+  }
+  &-item {
+    background-color: $pricing-background;
+    width: 363px;
+    height: 421px;
+    padding: 46px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    &--special {
+      background-color: $primary-color;
+      color: white;
+      padding: 70px 0;
+      height: 502px;
+      & .pricing-benefit {
+        color: inherit;
+      }
+    }
+  }
+  &-price {
+    font-weight: 400;
+    font-size: 18px;
+    &-bold {
+      font-weight: 700;
+      font-size: 50px;
+    }
+  }
+  &-benefits-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 14px 0;
+  }
+  &-benefit {
+    color: $neutral-400;
+    font-size: 18px;
+    & strong {
+      font-size: inherit;
+      font-weight: inherit;
+      color: $neutral-500;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    &-list {
+      flex-direction: column;
+      row-gap: 45px;
+    }
+  }
+  @media screen and (max-width: 375px) {
+    &-item {
+      width: 100%;
+    }
+    &-heading {
+      font-size: 34px;
+      margin-bottom: 40px;
+    }
+  }
+}
